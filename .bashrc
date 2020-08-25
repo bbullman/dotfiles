@@ -112,5 +112,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Get in the $HOME directory
+LS_COLORS="ln=01;35:ow=01;31:di=01;31"
+export LS_COLORS
+
+# Get in the HOME directory
 cd ~
