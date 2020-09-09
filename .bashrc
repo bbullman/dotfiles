@@ -115,5 +115,10 @@ fi
 LS_COLORS="ln=01;35:ow=01;31:di=01;31"
 export LS_COLORS
 
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # Get in the HOME directory
 cd ~
