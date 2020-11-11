@@ -16,9 +16,10 @@ sudo apt-get update && sudo apt-get install -y \
   rsync \
   unzip \
   htop \
+  ytop \
   ripgrep \
+  net-tools \
 ```
-
 
 ### Clone Dotfiles
 ```
@@ -41,6 +42,22 @@ you should edit it to have your name and email address so git can use it.
 ```
 cp ~/dotfiles/.gitconfig.user ~/.gitconfig.user
 ```
+### Redis Server Environment
+
+You will manually have to add the dependencies for genie to use systemd.
+> https://github.com/arkane-systems/genie
+
+```
+sudo apt-get update && sudo apt-get install -y \
+  daemonize \
+  dbus \
+  policykit-1 \
+  systemd \
+  redis-server \
+```
+
+You will need to install dotnet core as well.
+> https://dotnet.microsoft.com/download/
 
 ### Rust Environment
 Install Rust through curl.

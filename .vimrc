@@ -2,6 +2,8 @@ set tabstop=2 softtabstop=2 expandtab shiftwidth=2 smarttab
 
 syntax on
 
+set autoindent
+
 autocmd vimenter * colorscheme gruvbox
 set bg=dark
 
