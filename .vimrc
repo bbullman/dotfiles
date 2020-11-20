@@ -1,19 +1,20 @@
-set tabstop=2 softtabstop=2 expandtab shiftwidth=2 smarttab
-
+" defaults
 syntax on
 
 set autoindent
 set smartindent
-
 set showmatch
 set matchtime=3
-inoremap <C-Return> <CR><CR><C-o>k<Tab>
-inoremap ( ()<Esc>i
-inoremap } }<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
-inoremap ] ]<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
-inoremap ) )<Left><c-o>%<c-o>:sleep 500m<CR><c-o>%<c-o>a
 
+" default configuration for all files is 2 space
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab
+
+" default for Rust (.rs) files
+autocmd Filetype rust setlocal tabstop=4 softtabstop=4 shiftwidth=2 expandtab smarttab
+
+" for custom scheme and background for gruvbox
 autocmd vimenter * colorscheme gruvbox
 set bg=dark
 
+" final command
 autocmd VimEnter * highlight Normal ctermbg=0
