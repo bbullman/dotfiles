@@ -42,6 +42,7 @@ you should edit it to have your name and email address so git can use it.
 ```
 cp ~/dotfiles/.gitconfig.user ~/.gitconfig.user
 ```
+
 ### Redis Server Environment
 
 You will manually have to add the dependencies for genie to use systemd.
@@ -77,8 +78,71 @@ command -v nvm
 nvm install --lts
 ```
 
+### Dotnet Core
+
+TBD - See microsoft's website on dotnet core and cli tooling
+
+### Getting C-Tags
+
+Install prereqs for Universal-Ctags
+```
+git clone https://github.com/universal-ctags/ctags.git ~/dotfiles/ctags
+
+sudo apt install \
+gcc make \
+pkg-config autoconf automake \
+python3-docutils \
+libseccomp-dev \
+libjansson-dev \
+libyaml-dev \
+libxml2-dev
+```
+
+Build the package
+```
+cd dotfiles/ctags
+./autogen.sh
+./configure --prefix=/where/you/want # defaults to /usr/local
+make
+make install # may require extra privileges depending on where to install
+```
+
+### Getting Taskbar + Syntastic
+
+Taskbar
+```
+git clone https://github.com/preservim/tagbar.git ~/.vim/pack/tagbar/start/
+```
+
+Add to .vimrc if not present:
+```
+nmap <F4> :TagbarToggle<CR>
+```
+
+Syntastic
+```
+git clone https://github.com/vim-syntastic/syntastic.git ~/.vim/pack/syntastic/start/
+```
+
+### Getting Specific Language Syntax Checking
+Rust.vim
+
+### Docker
+
+Doing anything with Docker and WSL2 should be done through Docker desktop integration. May have to set the wsl distro version to 2 in Powershell to properly register it in Docker.
+
+### Windows Configuration File
+  settings.json
+
 ### File List
   .bashrc
   .gitconfig
   .profile
   .vimrc
+
+### Plugin List
+  .vim/default/gruvbox
+  .vim/ctags
+  .vim/taskbar
+  .vim/syntastic
+  .vim/plugins/rust.vim

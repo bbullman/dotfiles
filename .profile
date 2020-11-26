@@ -26,4 +26,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# set path to include cargo
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# set path to include ctags
