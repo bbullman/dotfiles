@@ -25,6 +25,9 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_rust_checkers = ['cargo']
 
+" aliases
+:command SP set paste
+
 " for ctags
 " let g:tagbar_ctags_bin = null 
 
