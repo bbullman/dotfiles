@@ -8,7 +8,7 @@ setting up a new build on WSL2 Debian with a functional environment.
 ### Packages
 ```
 sudo apt-get update && sudo apt-get install -y \
-  vimk \
+  vim \
   git \
   gpg \
   pass \
@@ -16,7 +16,7 @@ sudo apt-get update && sudo apt-get install -y \
   rsync \
   unzip \
   htop \
-  ytop \
+  htop \
   ripgrep \
   net-tools \
 ```
@@ -80,7 +80,7 @@ nvm install --lts
 
 ### Dotnet Core
 
-TBD - See microsoft's website on dotnet core and cli tooling
+See: docs.microsoft.com/en-us/dotnet/core/install/linux-debian
 
 ### Getting C-Tags
 
@@ -125,6 +125,7 @@ git clone https://github.com/vim-syntastic/syntastic.git ~/.vim/pack/syntastic/s
 ```
 
 ### Getting Specific Language Syntax Checking
+
 Rust.vim
 
 ### Docker
@@ -132,17 +133,20 @@ Rust.vim
 Doing anything with Docker and WSL2 should be done through Docker desktop integration. May have to set the wsl distro version to 2 in Powershell to properly register it in Docker.
 
 ### Windows Configuration File
+
   settings.json
 
 ### File List
+
   .bashrc
   .gitconfig
   .profile
   .vimrc
 
 ### Plugin List
-  .vim/default/gruvbox
+
   .vim/ctags
+  .vim/default/gruvbox
   .vim/taskbar
   .vim/syntastic
   .vim/plugins/rust.vim
