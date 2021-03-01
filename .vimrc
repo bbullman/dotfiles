@@ -46,6 +46,27 @@ set updatetime=1000
 autocmd filetype rust setlocal tabstop=4 softtabstop=4 shiftwidth=2 expandtab smarttab
 " }}}
 
+" Colors: {{{
+augroup ColorschemePreferences
+  autocmd!
+  " These preferences clear some gruvbox background colours, allowing transparency
+  autocmd ColorScheme * highlight Normal     ctermbg=NONE guibg=NONE
+  autocmd ColorScheme * highlight SignColumn ctermbg=NONE guibg=NONE
+  autocmd ColorScheme * highlight Todo       ctermbg=NONE guibg=NONE
+  " Link ALE sign highlights to similar equivalents without background colours
+  autocmd ColorScheme * highlight link ALEErrorSign   WarningMsg
+  autocmd ColorScheme * highlight link ALEWarningSign ModeMsg
+  autocmd ColorScheme * highlight link ALEInfoSign    Identifier
+augroup END
+
+colorscheme gruvbox
+set background=dark
+highlight Pmenu ctermbg=black guibg=black
+highlight PmenuSel ctermbg=black guibg=black
+highlight PmenuSbar ctermbg=black guibg=black
+highlight PmenuThumb ctermbg=gray guibg=gray
+" }}}
+
 " ALE: {{{
 let g:ale_sign_error = '•'
 let g:ale_sign_warning = '•'
@@ -54,6 +75,27 @@ let g:ale_sign_style_error = '·'
 let g:ale_sign_style_warning = '·'
 
 let g:ale_linters = { 'cs': ['OmniSharp'] }
+" }}}
+
+" Asyncomplete: {{{
+let g:asyncomplete_auto_popup = 0
+let g:asyncomplete_auto_completeopt = 0
+
+set completeopt=menuone,noinsert,noselect,preview
+
+autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
+function! s:check_back_space() abort
+        let col = col('.') - 1
+            return !col || getline('.')[col - 1]  =~ '\s'
+        endfunction
+
+        inoremap <silent><expr> <TAB>
+          \ pumvisible() ? "\<C-n>" :
+          \ <SID>check_back_space() ? "\<TAB>" :
+          \ asyncomplete#force_refresh()
+        inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
 " }}}
 
 " Sharpenup: {{{
@@ -70,7 +112,7 @@ augroup END
 " }}}
 
 let g:lightline = {
-      \ 'colorscheme': 'one dark',
+      \ 'colorscheme': 'onedark',
       \ 'active': {
       \   'right': [ [ 'lineinfo' ],
       \              [ 'percent' ],
@@ -120,18 +162,17 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_rust_checkers = ['cargo']
 
-" aliases
-:command PP set paste
-
 " for ctags
 " let g:tagbar_ctags_bin = null 
 
 " for taskbar
 nnoremap <silent> <f8> :TagbarToggle<CR>
 
+" aliases
+:command PP set paste
+
 " for custom scheme and background for gruvbox
-autocmd vimenter * colorscheme gruvbox
-set bg=dark
+" autocmd VimEnter * colorscheme gruvbox
 
 " final command
 autocmd VimEnter * highlight Normal ctermbg=0

@@ -36,3 +36,4 @@ rm -rf ~/dotfiles/.vim/pack/plugins/start/rust.vim/.git
 rm -rf ~/dotfiles/.vim/pack/plugins/start/sharpenup/.git
 rm -rf ~/dotfiles/.vim/pack/plugins/start/syntastic/.git
 rm -rf ~/dotfiles/.vim/pack/plugins/start/tagbar/.git
+rm -rf ~/dotfiles/.vim/pack/plugins/start/asyncomplete.vim/.git
