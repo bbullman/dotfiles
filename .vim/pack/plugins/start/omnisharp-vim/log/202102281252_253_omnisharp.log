@@ -1,0 +1,347 @@
+VIM - Vi IMproved 8.1 (2018 May 18, compiled Jun 15 2019 16:41:15), Included patches: 1-875, 878, 884, 948, 1046, 1365-1368, 1382, 1401
+
+OmniSharp server started.
+    Path: /home/bbullman/.cache/omnisharp-vim/omnisharp-roslyn/run
+    Target: /home/bbullman
+    PID: 253
+
+[info]: OmniSharp.Stdio.Host
+        Starting OmniSharp on debian 10.0 (x64)
+[info]: OmniSharp.Services.DotNetCliService
+        DotNetPath set to dotnet
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Located 1 MSBuild instance(s)
+            1: StandAlone 16.8.0 - "/home/bbullman/.cache/omnisharp-vim/omnisharp-roslyn/omnisharp/.msbuild/Current/Bin"
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        MSBUILD_EXE_PATH environment variable set to '/home/bbullman/.cache/omnisharp-vim/omnisharp-roslyn/omnisharp/.msbuild/Current/Bin/MSBuild.exe'
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Registered MSBuild instance: StandAlone 16.8.0 - "/home/bbullman/.cache/omnisharp-vim/omnisharp-roslyn/omnisharp/.msbuild/Current/Bin"
+            CscToolExe = csc.exe
+            MSBuildToolsPath = /home/bbullman/.cache/omnisharp-vim/omnisharp-roslyn/omnisharp/.msbuild/Current/Bin
+            CscToolPath = /home/bbullman/.cache/omnisharp-vim/omnisharp-roslyn/omnisharp/.msbuild/Current/Bin/Roslyn
+            BypassFrameworkInstallChecks = true
+            MSBuildExtensionsPath = /home/bbullman/.cache/omnisharp-vim/omnisharp-roslyn/omnisharp/.msbuild
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.CSharpFormattingWorkspaceOptionsProvider, Order: 0
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.Completion.CompletionOptionsProvider, Order: 0
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.RenameWorkspaceOptionsProvider, Order: 100
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.ImplementTypeWorkspaceOptionsProvider, Order: 110
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.BlockStructureWorkspaceOptionsProvider, Order: 140
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Detecting Cake files in '/home/bbullman'.
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Could not find any Cake files
+[info]: OmniSharp.MSBuild.ProjectSystem
+        No solution files found in '/home/bbullman'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/.vim/pack/plugins/start/omnisharp-vim/test/example/example.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/1480/1480.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/125/125.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/938/938.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/ordering/937/937.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/7/7.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/29/29.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/queues/1472/1472.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/12/12.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/120/120.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/9/9.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/1119/1119.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/665/665.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/442/442.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/692/692.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/2d/419/419.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/trees/572/572.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/trees/617/617.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/136/136.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/92/92.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/1094/1094.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/415/415.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/13/13.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/2/2.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/21/21.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/621/621.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/1347/1347.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/121/121.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/leetcode/819/819.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/csharp-sandbox/StockBrokerage/StockBrokerage.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/snippets/qsort/qsort.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/bbullman/source/csharp/tools/aras-cli/aras-cli.csproj'
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Detecting CSX files in '/home/bbullman'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/.vim/pack/plugins/start/omnisharp-vim/test/example/example.csproj
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Could not find any CSX files
+[info]: OmniSharp.WorkspaceInitializer
+        Configuration finished.
+[info]: OmniSharp.Stdio.Host
+        Omnisharp server running using Stdio at location '/home/bbullman' on host -1.
+[info]: OmniSharp.OmniSharpWorkspace
+        Miscellaneous file: /home/bbullman/test.cs added to workspace
+Replaying requests for buffer 1
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/ordering/937/937.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/ordering/937/937.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/7/7.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/7/7.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/7/7.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/29/29.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/29/29.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/29/29.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/queues/1472/1472.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/queues/1472/1472.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/queues/1472/1472.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/12/12.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/12/12.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/12/12.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/120/120.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/120/120.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/120/120.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/9/9.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/9/9.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/9/9.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/1119/1119.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/1119/1119.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/1119/1119.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/665/665.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/665/665.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/665/665.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/442/442.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/442/442.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/442/442.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/692/692.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/692/692.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/692/692.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/2d/419/419.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/2d/419/419.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/2d/419/419.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/trees/572/572.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/trees/572/572.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/trees/572/572.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/trees/617/617.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/trees/617/617.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/trees/617/617.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/136/136.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/136/136.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/136/136.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/92/92.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/92/92.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/92/92.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/1094/1094.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/1094/1094.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/1094/1094.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/415/415.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/415/415.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/415/415.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/13/13.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/13/13.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/13/13.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/2/2.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/2/2.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/2/2.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/21/21.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/21/21.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/21/21.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/621/621.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/621/621.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/621/621.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/1347/1347.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/1347/1347.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/1347/1347.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/121/121.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/121/121.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/121/121.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/leetcode/819/819.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/leetcode/819/819.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/leetcode/819/819.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/csharp-sandbox/StockBrokerage/StockBrokerage.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/csharp-sandbox/StockBrokerage/StockBrokerage.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/csharp-sandbox/StockBrokerage/StockBrokerage.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/snippets/qsort/qsort.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/snippets/qsort/qsort.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/snippets/qsort/qsort.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/bbullman/source/csharp/tools/aras-cli/aras-cli.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Successfully loaded project file '/home/bbullman/source/csharp/tools/aras-cli/aras-cli.csproj'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/bbullman/source/csharp/tools/aras-cli/aras-cli.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: example
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 1480
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 125
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 938
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 937
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 7
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 29
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 1472
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 12
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 120
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 9
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 1119
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 665
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 442
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 692
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 419
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 572
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 617
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 136
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 92
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 1094
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 415
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 13
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 2
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 21
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 621
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 1347
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 121
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: 819
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: StockBrokerage
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: qsort
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: aras-cli
+Workspace complete: 32 project(s)

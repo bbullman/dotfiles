@@ -1,0 +1,7 @@
+VIM - Vi IMproved 8.1 (2018 May 18, compiled Jun 15 2019 16:41:15), Included patches: 1-875, 878, 884, 948, 1046, 1365-1368, 1382, 1401
+
+OmniSharp server started.
+    Path: /omnisharp-vim/omnisharp-roslyn/OmniSharp.exe
+    Target: /home/bbullman/.vim/pack/plugins/start/omnisharp-vim
+    PID: 10304
+
