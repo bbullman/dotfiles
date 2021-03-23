@@ -21,7 +21,7 @@
     // You can add more global application settings here.
     // To learn more about global settings, visit https://aka.ms/terminal-global-settings
 	
-	"launchMode": "fullscreen",
+	"launchMode": "maximizedFocus",
 	
 	"startOnUserLogin": false,
 
@@ -193,7 +193,8 @@
         // - "split": "auto" makes this pane open in the direction that provides the most surface area.
         // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
         // To learn more about panes, visit https://aka.ms/terminal-panes
-		{ "command": "toggleFocusMode", "keys": "alt+shift+P" },
+		{ "command": "toggleFocusMode", "keys": "alt+ctrl+w" },
+		{ "command": "toggleFullscreen", "keys": "alt+ctrl+q" },
         { "command": { "action": "splitPane", "split": "vertical" }, "keys": "alt+shift+plus" },
 		{ "command": { "action": "splitPane", "split": "horizontal" }, "keys": "alt+shift+-" },
 		{ "command": { "action": "splitPane", "split": "auto" }, "keys": "alt+shift+|" }
