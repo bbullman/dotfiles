@@ -1,0 +1,20 @@
+MyPackage	input.sv	/^package MyPackage;$/;"	K
+MyData	input.sv	/^    } MyData;$/;"	T	package:MyPackage
+MyPackage.MyData	input.sv	/^    } MyData;$/;"	T	package:MyPackage
+a	input.sv	/^        shortreal a;$/;"	w	typedef:MyPackage.MyData
+MyPackage.MyData.a	input.sv	/^        shortreal a;$/;"	w	typedef:MyPackage.MyData
+b	input.sv	/^        real b;$/;"	w	typedef:MyPackage.MyData
+MyPackage.MyData.b	input.sv	/^        real b;$/;"	w	typedef:MyPackage.MyData
+add	input.sv	/^    function MyData add(MyData x, y);$/;"	f	package:MyPackage
+MyPackage.add	input.sv	/^    function MyData add(MyData x, y);$/;"	f	package:MyPackage
+x	input.sv	/^    function MyData add(MyData x, y);$/;"	p	function:MyPackage.add
+MyPackage.add.x	input.sv	/^    function MyData add(MyData x, y);$/;"	p	function:MyPackage.add
+y	input.sv	/^    function MyData add(MyData x, y);$/;"	p	function:MyPackage.add
+MyPackage.add.y	input.sv	/^    function MyData add(MyData x, y);$/;"	p	function:MyPackage.add
+mul	input.sv	/^    function MyData mul(MyData x, y);$/;"	f	package:MyPackage
+MyPackage.mul	input.sv	/^    function MyData mul(MyData x, y);$/;"	f	package:MyPackage
+x	input.sv	/^    function MyData mul(MyData x, y);$/;"	p	function:MyPackage.mul
+MyPackage.mul.x	input.sv	/^    function MyData mul(MyData x, y);$/;"	p	function:MyPackage.mul
+y	input.sv	/^    function MyData mul(MyData x, y);$/;"	p	function:MyPackage.mul
+MyPackage.mul.y	input.sv	/^    function MyData mul(MyData x, y);$/;"	p	function:MyPackage.mul
+var_to_check_context	input.sv	/^reg var_to_check_context;$/;"	r

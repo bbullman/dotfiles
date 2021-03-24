@@ -1,0 +1,6 @@
+object A {}
+object B {}
+
+object C {
+  @foo: X
+}

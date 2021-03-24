@@ -1,0 +1,12 @@
+A	input.inko	/^object A {$/;"	o
+method_a	input.inko	/^  def method_a {}$/;"	m	object:A
+B	input.inko	/^object B {$/;"	o
+method_b	input.inko	/^  def method_b {}$/;"	m	object:B
++	input.inko	/^def + {}$/;"	m
+-	input.inko	/^def - {}$/;"	m
+*	input.inko	/^def * {}$/;"	m
+/	input.inko	/^def \/ {}$/;"	m
+%	input.inko	/^def % {}$/;"	m
+^	input.inko	/^def ^ {}$/;"	m
+[]	input.inko	/^def [] {}$/;"	m
+[]=	input.inko	/^def []= {}$/;"	m

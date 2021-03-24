@@ -1,0 +1,16 @@
+object A {
+  def method_a {}
+}
+
+object B {
+  def method_b {}
+}
+
+def + {}
+def - {}
+def * {}
+def / {}
+def % {}
+def ^ {}
+def [] {}
+def []= {}
