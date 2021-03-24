@@ -1,3 +1,2 @@
 **/*.netrwhist
 **/*.git
-.vim/pack/plugins/start/omnisharp-vim/log/**

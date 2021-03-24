@@ -19,7 +19,7 @@ cp /mnt/c/users/bbullman/appdata/local/packages/Microsoft.WindowsTerminalPreview
 
 # Remove unnecessary plugins
 # WARNING: Update this as neeeded!
-# rm -rf ~/dotfiles/.vim/pack/ctags
+rm -rf ~/dotfiles/.vim/pack/ctags
 rm -rf ~/dotfiles/.vim/pack/plugins/start/vimproc.vim
 
 # Remove plugins .git files
@@ -27,7 +27,6 @@ rm -rf ~/dotfiles/.vim/pack/plugins/start/vimproc.vim
 # TODO: Perhaps make this a mv to .bak instead
 # The purpose of this is to keep git from thinking these are submodules when they are in fact just plugin snapshots
 rm -rf ~/dotfiles/.vim/pack/plugins/start/ale/.git*
-rm -rf ~/dotfiles/.vim/pack/plugins/start/ctags/.git*
 rm -rf ~/dotfiles/.vim/pack/plugins/start/dispatch/.git*
 rm -rf ~/dotfiles/.vim/pack/plugins/start/gruvbox/.git*
 rm -rf ~/dotfiles/.vim/pack/plugins/start/lightline/.git*
