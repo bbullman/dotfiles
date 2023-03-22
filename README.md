@@ -155,3 +155,5 @@ sharpenup
 syntastic
 tagbar
 ```
+Run ./DownloadVimPlugins.sh
+Run ./UpdateVimPlugins.sh
