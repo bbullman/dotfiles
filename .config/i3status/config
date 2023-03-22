@@ -1,0 +1,77 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        interval = 2
+        colors = true
+        color_good = "#00FF00"
+        color_degraded = "#990000"
+        color_bad = "#FF0000"
+}
+
+# order += "cpu_temperature APU"
+# order += "cpu_temperature apcitz"
+order += "cpu_usage"
+order += "disk /"
+order += "memory"
+# order += "ipv6"
+order += "wireless _first_"
+order += "battery all"
+order += "tztime local"
+
+wireless _first_ {
+        format_up = "🡙 [%quality @ %essid] %ip"
+        format_down = "🡙 [Down]"
+}
+
+battery all {
+        format = "%status %percentage %remaining"
+        low_threshold = 11
+        threshold_type = percentage
+        status_chr = "⍍"
+        status_bat = "⍔"
+        status_full = "⌼"
+        status_unk = "⎕"
+}
+
+disk "/" {
+        format = "𖤦 %avail"
+}
+
+load {
+        format = "%1min"
+}
+
+memory {
+        format = "∿%used"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
+}
+
+tztime local {
+        format = "%y-%m-%d %H:%M:%S"
+}
+
+cpu_temperature APU {
+        format = "APU %degrees°C"
+        max_threshold=60
+        format_above_threshold="APU %degrees °C"
+}
+
+cpu_temperature apcitz {
+        format = "ACPITZ %degrees°C"
+        path = "/sys/class/hwmon/hwmon1/temp1_input"
+        max_threshold=70
+        format_above_threshold="ACPITZ %degrees °C"
+}
+
+cpu_usage {
+    format = "𖣐 %usage : %cpu0 𐤟 %cpu1 𐤟 %cpu2 𐤟 %cpu3 𐤟 %cpu4 𐤟 %cpu5 𐤟 %cpu6 𐤟 %cpu7 " 
+    max_threshold=90
+    degraded_threshold=50
+}

@@ -48,9 +48,9 @@ Follow the prompts in each shell script to modify this process appropriately.
 
 ## Environment Specific Development
 
-### Root Environment
+### WSL2 Environment (Debian)
 
-Two WSL settings need to be adjusted from pwsh:
+For WSL2 development on Windows (using Subsytem for Linux) you may need to update some settings. Two WSL settings need to be adjusted from pwsh:
 
 ```
 wsl --set-default-version 2
@@ -64,6 +64,8 @@ If sudo user not created (bbullman in this case) simply create it:
 3. id <bbullman>
 
 ### Dotnet Core
+
+Follow instructions.
 
 See: docs.microsoft.com/en-us/dotnet/core/install/linux-debian
 
@@ -100,6 +102,8 @@ sudo apt-get update && sudo apt-get install -y \
   systemd \
   redis-server \
 ```
+Only useful if you're working on a local caching project. Not particularly the only caching solution out there either.
+
 ### Getting C-Tags
 
 NOTE: Currently this is removed from this repo
@@ -131,8 +135,23 @@ make install # may require extra privileges depending on where to install
 
 Doing anything with Docker and WSL2 should be done through Docker desktop integration. May have to set the wsl distro version to 2 in Powershell to properly register it in Docker.
 
-## Other Information
+## Vim Plugins 
 
-There is a snapshot of the current vim plugins contained in .vim. DO NOT SYMLINK IT.
+There is a snapshot of the current vim plugins contained in .vim. DO NOT SYMLINK IT. DO modify the copy and setup scripts appropriately by adding the vim plugins you are using.
 
-DO modify the copy and setup scripts appropriately by adding the vim plugins you are using.
+A full list of useful plugins is as follows:
+
+```
+ale
+asyncomplete.vim
+ctags
+dispatch
+gruvbox
+lightline
+nerdtree
+omnisharp-vim
+rust.vim
+sharpenup
+syntastic
+tagbar
+```

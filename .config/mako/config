@@ -1,0 +1,21 @@
+# mako
+# man 5 mako more options
+
+# global configs
+max-history=10
+
+# binding opts
+on-button-left=dismiss
+on-button-right=dismiss-all
+
+# Visuals
+font=monospace 14
+backgorund-color=#446280
+border-color=#8fd4ff
+width=500
+height=300
+outer-margin=1
+margin=1
+border-size=2
+border-radius=5
+default-timeout=9001

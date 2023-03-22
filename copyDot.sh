@@ -12,13 +12,8 @@
 # Copy out all vim plugins
 cp -R ~/.vim ~/dotfiles/ 
 
-# Only used on the host machine to copy out windows terminal settings, comment out if using elsewhere
-# WARNING: Update with your $USER instead of 'bbullman'
-# WARNING: Change your packages/Microsoft.WindowsTerminalXXX value to appropriate location
-cp /mnt/c/users/bbullman/appdata/local/packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe/LocalState/settings.json ~/dotfiles/ 
-
 # Remove unnecessary plugins
-# WARNING: Update this as neeeded!
+# WARNING: Update this as needed!
 rm -rf ~/dotfiles/.vim/pack/ctags
 rm -rf ~/dotfiles/.vim/pack/plugins/start/vimproc.vim
 

@@ -1,5 +1,0 @@
-> /bin/sh '/home/bbullman/.vim/pack/plugins/start/omnisharp-vim/installer/omnisharp-manager.sh'   -l '/omnisharp-vim/omnisharp-roslyn'  -W
-================================================================================
-mkdir: cannot create directory ‘/omnisharp-vim’: Permission denied
-You don't have permission to create /omnisharp-vim.
-Error: failed to download the server, possibly a network issue
