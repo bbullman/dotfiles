@@ -2,8 +2,10 @@
 
 ## Introduction
 
-This is a list of simple software downloads and configurations for 
-setting up a new build on WSL2 Debian with a functional environment.
+This is a list of simple software setup and configurations for 
+setting up a new build on Windows 11 WSL2 (Debian Linux) or Arch Linux.
+
+Some of the commands are split. Pick the ones for the appropriate environment. Note that some packages may have different names from the AUR in case of Arch LInux.
 
 ## Basic Packages
 ```
@@ -148,6 +150,8 @@ rust \
 docker \
 redis \
 ```
+Copy the .config files from ~/dotfiles/.config to ~/.config to sync your setup with the files in this repo. I did not write a script to do this on purpose as it can inadvertently blow up your window manager.
+
 # Vim Plugins 
 
 There is a snapshot of the current vim plugins contained in .vim. DO NOT SYMLINK IT. DO modify the copy and setup scripts appropriately by adding the vim plugins you are using. A full list of useful plugins is as follows:
@@ -169,4 +173,5 @@ tagbar
 1. Run **./DownloadVimPlugins.sh** to download the plugins.
 2. Run **./UpdateVimPlugins.sh** to update the plugins.
 
-NOTE: ctags and gruvbox are snapshotted in this directory. Follow the instructions for ctags but don't bother with gruvbox, as it is an old repository and I have done several modifications to it to get it looking the way I want.
+
+**NOTE:** As mentioned above, ctags and gruvbox are snapshotted in this directory. Follow the instructions for ctags but don't bother with gruvbox, as it is an old repository and I have done several modifications to it to get it looking the way I want.
