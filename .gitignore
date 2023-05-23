@@ -1,2 +1,9 @@
 **/*.netrwhist
 **/*.git
+
+**/gh
+**/chromium
+**/spotify
+**/discord
+**/Signal
+**/obsidian

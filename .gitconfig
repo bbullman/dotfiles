@@ -3,3 +3,5 @@
 	name = bbullman
 [credential]
 	helper = cache
+[init]
+	defaultBranch = main
