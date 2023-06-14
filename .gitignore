@@ -1,6 +1,8 @@
 **/*.netrwhist
 **/*.git
 
+**/dconf
+**/pulse
 **/gh
 **/chromium
 **/spotify
