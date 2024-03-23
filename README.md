@@ -142,13 +142,7 @@ Arch Linux is my favorite Systemd-based distro and preferred development environ
 Install the above packages from the AUR via yay. You can also use pacman for some packages and dependencies.
 
 ```
-sudo pacman -Syu | yay -Syu
-dotnet-runtime \
-dotnet-sdk \
-pwsh \
-rust \
-docker \
-redis \
+sudo pacman -S dotnet-runtime dotnet-sdk rustup python3 redis docker kubectl
 ```
 Copy the .config files from ~/dotfiles/.config to ~/.config to sync your setup with the files in this repo. I did not write a script to do this on purpose as it can inadvertently blow up your window manager.
 
