@@ -106,9 +106,39 @@ This is support for both i3 (X11) and sway (Wayland). In the future I will delet
 
 ## Dotnet Development
 
+### Dotnet/NET
+
 ```
-sudo pacman -S dotnet-runtime dotnet-sdk
+sudo pacman -S dotnet-runtime dotnet-sdkA
 ```
+
+### Pwsh
+
+```
+yay -S powershell-bin
+
+# Or the long way:
+# Clone the AUR package down with git, use the "Git Clone URL"
+git clone https://aur.archlinux.org/powershell-bin.git
+
+# Navigate into the directory from the Git clone
+cd powershell-bin
+
+# AUR Packages are community created, MAKE SURE YOU REVIEW THE FILES BEFORE INSTALL!
+cat PKGBUILD
+
+# Run makepkg to build the AUR package, '-s' will sync dependencies, '-i' will install the package after build.
+makepkg -si
+```
+
+### IDEs
+
+```
+# VSCode
+yay -S code
+```
+
+You'll also want omnisharp-vim if working in a vim style environment. See [Vim Plugins](#vim-plugins).
 
 ## Node Development 
 
