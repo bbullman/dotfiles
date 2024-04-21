@@ -183,7 +183,18 @@ nvm install --lts
 ```
 sudo pacman -S python3 python-pip pythonA
 yay -S python-conda jupyterlab jupyter-notebook
-
+# Create a conda environment named ml for machine learning
+conda create -n "ml"
+sudo conda init bash
+# Re-exec bash, enter the venv
+bash
+conda activate ml
+# Get all the ml packages
+conda install --yes numpy scipy pandas scikit-learn matplotlib seaborn
+# Update conda
+conda update -n base conda
+# To use the system env versus the conda 'base' env on startup
+conda config --set auto_activate_base false
 ```
 
 ## Rust Development
