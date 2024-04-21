@@ -2,6 +2,6 @@
 	email = bradleybullman@gmail.com
 	name = bbullman
 [credential]
-	helper = cache
+	helper = store --file /home/bbull/repos/.keys/github-general
 [init]
 	defaultBranch = main

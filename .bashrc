@@ -122,3 +122,7 @@ export PS1="\[\e[32m\]\u@\h: \[\e[34m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m
 # Get in the HOME directory
 cd ~
 . "$HOME/.cargo/env"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export XDG_CURRENT_DESKTOP=sway
