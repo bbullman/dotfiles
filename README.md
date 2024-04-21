@@ -34,41 +34,9 @@ you should edit it to have your name and email address so git can use it.
 ```
 Follow the prompts in each shell script to modify this process appropriately.
 
-### Getting C-Tags
+------
 
-**NOTE:** Currently this is removed from this repo
-
-Install prereqs for Universal-Ctags
-```
-git clone https://github.com/universal-ctags/ctags.git ~/dotfiles/ctags
-```
-
-**Debian**
-```
-sudo apt install \
-gcc make \
-pkg-config autoconf automake \
-python3-docutils \
-libseccomp-dev \
-libjansson-dev \
-libyaml-dev \
-libxml2-dev
-```
-
-**Arch**
-```
-sudo pacman -S gcc make pkg-config autocnnf automake python3-docutils libseccomp-dev libjansson-dev libyaml-dev libxml2-dev
-```
-
-Build the package
-
-```
-cd dotfiles/ctags
-./autogen.sh
-./configure --prefix=/where/you/want # defaults to /usr/local
-make
-make install # may require extra privileges depending on where to install
-```
+# Linux OS Basics
 
 ## Debian
 
@@ -76,13 +44,9 @@ make install # may require extra privileges depending on where to install
 sudo apt-get update && sudo apt-get install -y \
 ```
 
-### Dotnet Development
-
-Follow instructions.
-
-See: docs.microsoft.com/en-us/dotnet/core/install/linux-debian
-
 ## Arch
+
+I use Arch as my default OS distro.
 
 ```
 sudo pacman -Syu \
@@ -117,33 +81,9 @@ sudo pacman -S dotnet-runtime dotnet-sdk rustup python3 redis docker kubectl rip
 
 Copy the .config files from ~/dotfiles/.config to ~/.config to sync your setup with the files in this repo. I did not write a script to do this on purpose as it can inadvertently blow up your window manager.
 
-### Vim Plugins 
-
-There is a snapshot of the current vim plugins contained in .vim. DO NOT SYMLINK IT. DO modify the copy and setup scripts appropriately by adding the vim plugins you are using. A full list of useful plugins is as follows:
-
-```
-ale
-asyncomplete.vim
-ctags
-dispatch
-gruvbox
-lightline
-nerdtree
-omnisharp-vim
-rust.vim
-sharpenup
-syntastic
-tagbar
-```
-1. Run **./DownloadVimPlugins.sh** to download the plugins.
-2. Run **./UpdateVimPlugins.sh** to update the plugins.
-
-
-**NOTE:** As mentioned above, ctags and gruvbox are snapshotted in this directory. Follow the instructions for ctags but don't bother with gruvbox, as it is an old repository and I have done several modifications to it to get it looking the way I want.
-
 ## WSL2
 
-For WSL2 development on Windows (using Subsytem for Linux) you may need to update some settings. Two WSL settings need to be adjusted from pwsh:
+For WSL2 development on Windows (using Subsystem for Linux) you may need to update some settings. Two WSL settings need to be adjusted from pwsh:
 
 ```
 wsl --set-default-version 2
@@ -159,6 +99,10 @@ sudo pacman -S wayland i3 i3status wezterm mako sway xorg-xwayland swaylock sway
 ```
 
 This is support for both i3 (X11) and sway (Wayland). In the future I will delete i3 (but continue to use i3status as my main status bar).
+
+------
+
+# Software, Systems, & Tools
 
 ## Dotnet Development
 
@@ -242,7 +186,7 @@ sudo pacman -S dotnet-runtime dotnet-sdk rustup python3 redis docker kubectl
 ```
 Copy the .config files from ~/dotfiles/.config to ~/.config to sync your setup with the files in this repo. I did not write a script to do this on purpose as it can inadvertently blow up your window manager.
 
-# Vim Plugins 
+## Vim Plugins 
 
 There is a snapshot of the current vim plugins contained in .vim. DO NOT SYMLINK IT. DO modify the copy and setup scripts appropriately by adding the vim plugins you are using. A full list of useful plugins is as follows:
 
@@ -266,4 +210,42 @@ tagbar
 
 **NOTE:** As mentioned above, ctags and gruvbox are snapshotted in this directory. Follow the instructions for ctags but don't bother with gruvbox, as it is an old repository and I have done several modifications to it to get it looking the way I want.
 
-## Troubleshooting
+### Getting C-Tags
+
+**NOTE:** Currently this is removed from this repo
+
+Install prereqs for Universal-Ctags
+```
+git clone https://github.com/universal-ctags/ctags.git ~/dotfiles/ctags
+```
+
+**Debian**
+```
+sudo apt install \
+gcc make \
+pkg-config autoconf automake \
+python3-docutils \
+libseccomp-dev \
+libjansson-dev \
+libyaml-dev \
+libxml2-dev
+```
+
+**Arch**
+```
+sudo pacman -S gcc make pkg-config autocnnf automake python3-docutils libseccomp-dev libjansson-dev libyaml-dev libxml2-dev
+```
+
+Build the package
+
+```
+cd dotfiles/ctags
+./autogen.sh
+./configure --prefix=/where/you/want # defaults to /usr/local
+make
+make install # may require extra privileges depending on where to install
+```
+
+------
+
+# Troubleshooting
