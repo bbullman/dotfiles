@@ -1,2 +1,11 @@
 **/*.netrwhist
 **/*.git
+
+**/dconf
+**/pulse
+**/gh
+**/chromium
+**/spotify
+**/discord
+**/Signal
+**/obsidian

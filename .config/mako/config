@@ -9,11 +9,11 @@ on-button-left=dismiss
 on-button-right=dismiss-all
 
 # Visuals
-font=monospace 14
-backgorund-color=#446280
-border-color=#8fd4ff
-width=500
-height=300
+font=Ioveska 10
+background-color=#400080
+border-color=#666699
+width=350
+height=200
 outer-margin=1
 margin=1
 border-size=2
