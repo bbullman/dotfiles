@@ -104,6 +104,17 @@ This is support for both i3 (X11) and sway (Wayland). In the future I will delet
 
 # Software, Systems, & Tools
 
+## Go Development
+
+```
+sudo pacman -S go go-tools gopls delve goreleaser gox ko yaegi
+```
+
+Setup golangci-lint for your CI environment.
+
+As of 2024 Goland is a good complimentary IDE to Vim.
+
+
 ## Dotnet Development
 
 ### Dotnet/NET
@@ -155,7 +166,8 @@ nvm install --lts
 ## Python Development
 
 ```
-sudo pacman -S python3 python-pip pythonA
+sudo pacman -S python3 python-pip
+# Note you don't really need jupyterlab or jupyter-notebook here since they'll live in the conda venv
 yay -S python-conda jupyterlab jupyter-notebook
 # Create a conda environment named ml for machine learning
 conda create -n "ml"
@@ -163,8 +175,10 @@ sudo conda init bash
 # Re-exec bash, enter the venv
 bash
 conda activate ml
-# Get all the ml packages
+# Get all the ml packages for the conda env
+# Not sure if these need to be set to conda-forge
 conda install --yes numpy scipy pandas scikit-learn matplotlib seaborn
+conda install -c conda-forge jupyterlab notebook nb_conda_kernels jupyter_contrib_extensions
 # Update conda
 conda update -n base conda
 # To use the system env versus the conda 'base' env on startup
