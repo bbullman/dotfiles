@@ -24,6 +24,7 @@ set shiftwidth=4
 set softtabstop=-1
 set tabstop=8
 set title
+set noinsertmode
 
 set hidden
 set nofixendofline
