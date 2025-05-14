@@ -80,10 +80,14 @@ yay --version
 
 ### Typical Setup
 ```
-sudo pacman -S dotnet-runtime dotnet-sdk rustup python3 redis docker kubectl ripgrep
+sudo pacman -S python3 rustup dotnet-runtime dotnet-sdk redis docker kubectl ripgrep
 ```
 
 Copy the .config files from ~/dotfiles/.config to ~/.config to sync your setup with the files in this repo. I did not write a script to do this on purpose as it can inadvertently blow up your window manager.
+
+```
+yay -S brave-bin spotify swayr gtk
+```
 
 ## WSL2
 
