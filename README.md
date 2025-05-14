@@ -63,6 +63,10 @@ sudo pacman -Syu \
   net-tools \
 ```
 
+## NixOS
+
+**Coming Soon**
+
 ### Installing Yaourt (Yay)
 
 Yay will allow you to install AUR packages.
@@ -104,71 +108,19 @@ This is support for both i3 (X11) and sway (Wayland). In the future I will delet
 
 # Software, Systems, & Tools
 
-## Go Development
-
-```
-sudo pacman -S go go-tools gopls delve goreleaser gox ko yaegi
-```
-
-Setup golangci-lint for your CI environment.
-
-As of 2024 Goland is a good complimentary IDE to Vim.
-
-
-## Dotnet Development
-
-### Dotnet/NET
-
-```
-sudo pacman -S dotnet-runtime dotnet-sdkA
-```
-
-### Pwsh
-
-```
-yay -S powershell-bin
-
-# Or the long way:
-# Clone the AUR package down with git, use the "Git Clone URL"
-git clone https://aur.archlinux.org/powershell-bin.git
-
-# Navigate into the directory from the Git clone
-cd powershell-bin
-
-# AUR Packages are community created, MAKE SURE YOU REVIEW THE FILES BEFORE INSTALL!
-cat PKGBUILD
-
-# Run makepkg to build the AUR package, '-s' will sync dependencies, '-i' will install the package after build.
-makepkg -si
-```
-
-### IDEs
-
-```
-# VSCode
-yay -S code
-```
-
-You'll also want omnisharp-vim if working in a vim style environment. See [Vim Plugins](#vim-plugins).
-
-## Node Development 
-
-If working in a node environment you will need to install through NVM.
-
-```
-https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-
-command -v nvm
-
-nvm install --lts
-```
-
 ## Python Development
 
 ```
 sudo pacman -S python3 python-pip
+```
+
+### Conda
+
+If necessary, you can install Conda.
+```
+sudo pacman -S python3 python-pip
 # Note you don't really need jupyterlab or jupyter-notebook here since they'll live in the conda venv
-yay -S python-conda jupyterlab jupyter-notebook
+yay -S conda jupyterlab jupyter-notebook
 # Create a conda environment named ml for machine learning
 conda create -n "ml"
 sudo conda init bash
@@ -198,9 +150,64 @@ Install Rust through curl.
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-**Rust Specific Packages**
+**Rust Specific System-Level Packages**
+
+Unmaintained package below.
 ```
 cargo install ytop
+```
+
+## Go Development
+
+```
+sudo pacman -S go go-tools gopls delve goreleaser gox ko yaegi
+```
+
+Setup golangci-lint for your CI environment.
+
+As of 2024 Goland is a good complimentary IDE to Vim.
+
+## Dotnet Development
+
+### Dotnet/.NET
+
+I used to work at Microsoft so dotnet was heavily used.
+
+```
+sudo pacman -S dotnet-runtime dotnet-sdkA
+```
+
+You'll also want omnisharp-vim if working in a vim style environment. See [Vim Plugins](#vim-plugins).
+
+### Pwsh
+
+```
+yay -S powershell-bin
+
+# Or the long way:
+# Clone the AUR package down with git, use the "Git Clone URL"
+git clone https://aur.archlinux.org/powershell-bin.git
+
+# Navigate into the directory from the Git clone
+cd powershell-bin
+
+# AUR Packages are community created, MAKE SURE YOU REVIEW THE FILES BEFORE INSTALL!
+cat PKGBUILD
+
+# Run makepkg to build the AUR package, '-s' will sync dependencies, '-i' will install the package after build.
+makepkg -si
+```
+
+## Node Development 
+
+If working in a node environment you will need to install through NVM.
+
+```
+https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+command -v nvm
+
+nvm install --lts
 ```
 
 ## Redis Server
@@ -216,7 +223,7 @@ sudo apt-get update && sudo apt-get install -y \
   systemd \
   redis-server \
 ```
-Only useful if you're working on a local caching project. Not particularly the only caching solution out there either.
+Only useful if you're working on a local caching project. Not particularly the only caching solution out there.
 
 ## Postgres Server
 
@@ -262,7 +269,6 @@ Install prereqs for Universal-Ctags
 ```
 git clone https://github.com/universal-ctags/ctags.git ~/dotfiles/ctags
 ```
-
 **Debian**
 ```
 sudo apt install \
@@ -289,7 +295,21 @@ cd dotfiles/ctags
 make
 make install # may require extra privileges depending on where to install
 ```
+## IDEs
 
+You can also try goland or rustrover.
+
+```
+# VSCode
+yay -S code 
+```
 ------
 
 # Troubleshooting
+
+Check scripts in the dotfiles. Additionally for package conflicts:
+
+```
+pacman -Qi <package>
+pacman -Rs <package you want to remove>
+```
