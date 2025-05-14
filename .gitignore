@@ -1,6 +1,7 @@
 **/*.netrwhist
 **/*.git
 
+# configs to remove
 **/dconf
 **/pulse
 **/gh
@@ -9,3 +10,15 @@
 **/discord
 **/Signal
 **/obsidian
+**/helm
+**/pulse
+**/JetBrains
+**/BraveSoftware
+**/bluetuith
+**/bottom
+**/gtk*
+**/go
+**/krita*
+**/k9s
+**/mime*
+**/systemd

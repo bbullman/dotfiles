@@ -69,6 +69,17 @@ sudo pacman -Syu \
   dotnet-sdk \
   docker \
   kubectl \
+  k9s \
+  wayland \
+  sway \
+  swayr \
+  swaybar \
+  mako \ 
+  swaylock \
+  swayidle \
+  swaybg \
+  xorg-xwayland \
+  alacritty \ 
   wezterm  
 ```
 ### Installing Yaourt (Yay)
