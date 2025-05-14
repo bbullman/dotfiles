@@ -61,12 +61,16 @@ sudo pacman -Syu \
   htop \
   ripgrep \
   net-tools \
+  python3 \
+  python-pip \
+  rustup \
+  go \
+  dotnet-runtime \
+  dotnet-sdk \
+  docker \
+  kubectl \
+  wezterm  
 ```
-
-## NixOS
-
-**Coming Soon**
-
 ### Installing Yaourt (Yay)
 
 Yay will allow you to install AUR packages.
@@ -77,11 +81,7 @@ cd yay
 makepkg -si
 yay --version
 ```
-
 ### Typical Setup
-```
-sudo pacman -S python3 rustup dotnet-runtime dotnet-sdk redis docker kubectl ripgrep
-```
 
 Copy the .config files from ~/dotfiles/.config to ~/.config to sync your setup with the files in this repo. I did not write a script to do this on purpose as it can inadvertently blow up your window manager.
 
@@ -103,10 +103,14 @@ debian config --default-user bbullman
 If you want to attempt a GUI make sure you have your drivers installed.
 
 ```
-sudo pacman -S wayland i3 i3status wezterm mako sway xorg-xwayland swaylock swayidle swaybg
+sudo pacman -S wayland swaybar alacritty mako sway xorg-xwayland swaylock swayidle swaybg
 ```
 
 This is support for both i3 (X11) and sway (Wayland). In the future I will delete i3 (but continue to use i3status as my main status bar).
+
+## NixOS
+
+**Coming Soon**
 
 ------
 
